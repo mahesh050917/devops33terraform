@@ -1,3 +1,3 @@
-rgname = "testrg" 
-location = "eastus2" 
-env = "dev" 
+rgname   = "testrg"
+location = "eastus2"
+env      = "dev" 
