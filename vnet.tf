@@ -8,10 +8,18 @@ resource "azurerm_virtual_network" "demovnet" {
   }
 }
 
-##GGGGGAGAGAFAFAFAFYAYYA
-#AJKHAHKAKKHAHKAKHAKHAKHAKH
-#HHHHKJAKJKAJKAJKAJKAJKAJKAJKA
-#BHGHGHGHGHGHHHGHHGHGHGHGHHGHGHGHH
+
+resource "azurerm_virtual_network" "demovnet2" {
+  name                = "demovnet2"
+  location            = azurerm_resource_group.rg1.location
+  resource_group_name = azurerm_resource_group.rg1.name
+  address_space       = [var.vnet2_cidr]
+  tags = {
+    "env" = var.env
+  }
+}
+
+
 
 
 
